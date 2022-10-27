@@ -1,0 +1,143 @@
+* {
+ margin: 0;
+ padding: 0;
+ outline: none;
+ text-decoration: none;
+ border: none;
+}
+input,
+input:hover,
+input:focus {
+ box-shadow: none !important;
+ transition: all 0.2s linear;
+}
+input:focus {
+ border-color: rgb(25, 173, 33) !important;
+}
+html {
+ font-size: 80%;
+}
+a:hover {
+ text-decoration: none !important;
+}
+div.dataTables_filter,
+div.dataTables_length {
+ font-size: 1.2rem;
+}
+.dataTables_filter input {
+ padding: 0.7rem 1.2rem;
+ border-radius: 0.1rem;
+ border: 1px solid #333 !important;
+ color: #333;
+}
+.section__header {
+ text-align: center;
+ padding-bottom: 1rem;
+ margin-bottom: 1rem;
+ font-size: 3rem;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ border-bottom: 1px solid #f25;
+}
+.message-box {
+ position: relative;
+ padding: 2rem;
+ background-color: rgb(245, 255, 255);
+ color: #333;
+ text-align: center;
+ width: 100%;
+ box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+ font-size: 2.2rem;
+ cursor: default;
+}
+.importForm {
+ margin: 2rem 0;
+}
+.actions__container {
+ width: 100%;
+ display: flex;
+ align-items: flex-start;
+ justify-content: space-between;
+}
+.actions__container form {
+ width: 100%;
+ display: flex;
+ align-items: flex-end;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+.actions__container form div {
+ display: flex;
+ gap: 1rem;
+ flex-direction: column;
+}
+.actions__container form .btn {
+ width: fit-content;
+ font-size: 1.3rem;
+}
+.update_container {
+ border: 1px dashed #333;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ padding: 1rem;
+ margin-bottom: 1rem;
+}
+.update_container .update_box {
+ display: flex;
+ flex-direction: column;
+ gap: 0.5rem;
+ margin: 1rem 0;
+ width: calc(100% - 2rem);
+ max-width: 600px;
+ min-width: 150px;
+}
+@media (max-width: 772px) {
+ .update_container {
+  grid-template-columns: 1fr;
+ }
+ .update_container .update_box {
+  width: 100%;
+ }
+}
+.update_container input {
+ width: 100%;
+ border: 1px solid #333;
+ background-color: transparent;
+ color: #333;
+ padding: 0.5rem 1rem;
+}
+.update_buttons {
+ display: flex;
+ align-items: center;
+ font-size: 1.2rem;
+}
+.update_buttons .btn {
+ font-size: 1.2rem;
+}
+.result table {
+ margin: 2rem 0;
+ width: 100%;
+ border: 1px solid #ccc;
+ color: #333;
+ text-align: center;
+}
+.result table thead tr {
+ background-color: #333;
+ color: #fff;
+}
+.result table tr:nth-child(even) {
+ background-color: #eee;
+}
+.result table td,
+th {
+ padding: 1.5rem;
+ font-size: 1.1rem;
+}
+table thead th {
+ text-align: center !important;
+}
+@media (max-width: 772px) {
+ html {
+  font-size: 60%;
+ }
+}
